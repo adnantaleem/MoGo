@@ -50,8 +50,8 @@ padding-top: 10px;
 position: relative;
 }
 .navbar{
-  background:transparent;
-  transition: all 0.7s ease;
+background:transparent;
+transition: all 0.7s ease;
 }
 .navbar-brand{
 font-family: 'Montserrat', sans-serif;
@@ -106,7 +106,6 @@ height: 3px;
 width: 100%;
 background-color: #fce38a;
 transition: 0.36s;
-
 }
 .fa-bars{
 color: #fce38a;
@@ -114,7 +113,6 @@ color: #fce38a;
 .hero{
 width: 100%;
 height: 100%;
-
 }
 .hero-content{
 display: flex;
@@ -156,7 +154,6 @@ display: block;
 position: absolute;
 left: 48%;
 bottom: 36%
-
 }
 .header-footer{
 width: 100%;
@@ -226,7 +223,6 @@ cursor: pointer;
 .counter{
 background-color: #95e1d3;
 margin-top: 70px;
-
 }
 .counter h1{
 font-family: 'Montserrat', sans-serif;
@@ -274,25 +270,22 @@ font-size: 15px;
 -------------------------- */
 .image-slide{
 height: 835px;
-background-image: linear-gradient(0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255,.8) 100%),url(img/img-slide.png);
+background-image: url(img/tablet.png),linear-gradient(0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255,.8) 100%),url(img/img-slide.png);
+background-repeat: no-repeat,repeat,no-repeat;
+background-position: center bottom, top left, top left;
+z-index: 99,9,99;
 padding-top: 100px;
 margin-top: 100px;
 }
 .slide-img{
 position: relative;
-display: flex;
-justify-content: center;
-align-items: flex-end;
+width: 100%;
+height: 100%;
 }
-.tablet{
+.slide-img .mobile{
 position: absolute;
-top: 100%;
-left: 30%;
-}
-.mobile{
-position: absolute;
-top: 200px;
-left: 57%;
+bottom: 12%;
+left: 62%;
 }
 /* --------------------------
 -----Start Product section---
@@ -314,7 +307,6 @@ font-size: 1rem;
 margin-left: 15px;
 color: #000000;
 display: inline;
-
 }
 .accordion .card .card-header{
 height: 60px;
@@ -386,7 +378,6 @@ display: block;
 position: absolute;
 left: 0;
 top:48%;
-
 }
 .carousel-control-next{
 justify-content: flex-end;
@@ -529,7 +520,6 @@ margin-right: 70px;
 height: 220px;
 width: 220px;
 border-radius: 50%;
-
 }
 .customer-review-slide .media .media-body{
 margin-left: 50px;
@@ -558,7 +548,6 @@ display: block;
 position: absolute;
 left: 0;
 top:48%;
-
 }
 .carousel-control-next{
 justify-content: flex-end;
@@ -628,7 +617,6 @@ padding: 20px 0px;
 font-family: 'Montserrat', sans-serif;
 font-size: 14px;
 font-weight: 600;
-
 }
 .blog .card .card-body .card-text{
 font-family: 'Roboto', sans-serif;
@@ -741,7 +729,6 @@ border-bottom-left-radius: 0px;
 font-family: 'Montserrat', sans-serif;
 padding: 6px 20px;
 color: #ffffff;
-
 }
 .input-group .form-control{
 border-right: none;
@@ -776,37 +763,32 @@ width: 100%;
 /* ***************
 ------scrool top------
 ***************  */
-
 #myBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 15px; 
-    right: 30px; 
-    z-index: 9999; 
-    border: none; 
-    outline: none; 
-    background-color: rgba(243,129,129,.7);
-    color: white;
-    cursor: pointer;
-    padding: 10px 20px; 
-    font-size: 30px; 
-    transition: all .6sec ease;
-  }
-  
-  #myBtn:hover {
-    background-color: #555; 
-  }
+display: none;
+position: fixed;
+bottom: 15px;
+right: 30px;
+z-index: 9999;
+border: none;
+outline: none;
+background-color: rgba(243,129,129,.7);
+color: white;
+cursor: pointer;
+padding: 10px 20px;
+font-size: 30px;
+transition: all .6sec ease;
+}
+
+#myBtn:hover {
+background-color: #555;
+}
 /*********************
 ------Large Devices----
 ********************/
 @media (min-width:992px) and (max-width: 1199.8px) {
-.image-slide .tablet{
-left: 25%;
-}
 .blog .card .blog-date{
 top:28%;
 }
-
 }
 /*********************
 ------Med Devices----
@@ -816,7 +798,6 @@ top:28%;
 padding: 0px !important;
 margin-left: 30px;
 }
-
 .hero-content .content-title h3{
 font-size: 55px;
 }
@@ -839,9 +820,6 @@ font-size: 22px;
 }
 .services .media .media-body p{
 font-size: 14px;
-}
-.image-slide .tablet{
-left: 20%;
 }
 .products .service-img{
 height: 475px;
@@ -870,12 +848,14 @@ top:16%;
 footer .input-group{
 padding-bottom: 40px;
 }
-
 }
 /*********************
 ------Small Devices--------
 ********************/
 @media (min-width: 576px) and (max-width: 767.8px){
+.navbar-expand-md .navbar-nav{
+background-color: rgba(243,129,129,.8);
+}
 .navbar-nav .nav-link{
 text-align: center;
 }
@@ -884,10 +864,7 @@ bottom: 0px;
 left: 36%;
 width: 30%;
 }
-
-
 .nav-link.active::after{
-
 bottom: 0px;
 left: 36%;
 width: 30%;
@@ -902,9 +879,6 @@ font-size: 90px;
 left: 46%;
 bottom: 52%
 }
-.image-slide .tablet{
-left: 9%;
-}
 .counter .row .col{
 padding: 45px 0px;
 }
@@ -916,7 +890,6 @@ padding-bottom: 40px;
 }
 .counter{
 margin-top: 25px;
-
 }
 .counter h1{
 font-size: 3.5rem;
@@ -980,13 +953,6 @@ width: 120px;
 .products .service-img{
 height: 410px;
 }
-.image-slide .tablet{
-left: 2%;
-}
-.image-slide .mobile{
-left: 60%;
-}
-
 .discription{
 padding: 0px 0px 30px;
 }
@@ -1008,13 +974,14 @@ padding-bottom: 30px;
 footer .instagram{
 margin-top: 40px;
 }
-
-
 }
 /*********************
 ------X-Small Devices----
 ********************/
 @media (max-width: 575.98px) {
+.navbar-expand-md .navbar-nav{
+background-color: rgba(243,129,129,.8);
+}
 .navbar-nav .nav-link{
 text-align: center;
 }
@@ -1023,10 +990,7 @@ bottom: 0px;
 left: 36%;
 width: 30%;
 }
-
-
 .nav-link.active::after{
-
 bottom: 0px;
 left: 36%;
 width: 30%;
@@ -1041,18 +1005,17 @@ font-size: 62px;
 left: 41%;
 bottom: 59%
 }
-.image-slide{
-height: 670px;
+.progress{
+width: 90%;
 }
-.image-slide .tablet{
-top: 106%;
-left: 15%;
-width: 60%;
+.image-slide{
+background-size: 70%, auto, auto;
 }
 .image-slide .mobile{
-top: 34px;
-left: 55%;
-width: 37%;
+bottom: 14%;
+}
+.image-slide .mobile img{
+width: 90%;
 }
 .counter .row .col{
 padding: 45px 0px;
@@ -1065,7 +1028,6 @@ padding-bottom: 40px;
 }
 .counter{
 margin-top: 25px;
-
 }
 .counter h1{
 font-size: 3.5rem;
@@ -1129,12 +1091,6 @@ width: 120px;
 .products .service-img{
 height: 410px;
 }
-.image-slide .tablet{
-left: 15%;
-}
-.image-slide .mobile{
-left: 60%;
-}
 .discription{
 padding: 0px 0px 30px;
 }
@@ -1156,9 +1112,4 @@ padding-bottom: 30px;
 footer .instagram{
 margin-top: 40px;
 }
-}
-@media (min-width: 1600px){
-    .slide-img .tablet{
-        left: 37%
-    }
 }
