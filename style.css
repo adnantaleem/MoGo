@@ -1,0 +1,1164 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+*{
+margin:0px;
+padding: 0px;
+}
+html {
+scroll-behavior: smooth;
+}
+.section-title{
+position: relative;
+padding-bottom: 70px;
+text-align: center;
+}
+.section-title .title-sum{
+font-family: 'Kaushan Script', cursive;
+font-size: 24px;
+}
+.section-title .title-heading h2{
+font-family: 'Montserrat', sans-serif;
+font-size: 30px !important;
+font-weight: 700 !important;
+margin-top: 12px;
+}
+.section-title::after{
+content: "";
+width: 60px;
+height: 3px;
+background-color: #f38181;
+display: block;
+position: absolute;
+left: 47%;
+margin-top: 25px;
+}
+.discription{
+font-family: 'Roboto', sans-serif;
+color: #999999;
+font-size: 16px;
+padding: 0 120px 100px;
+text-align: center;
+}
+/* --------------------------
+---------Start Hader---------
+-------------------------- */
+header{
+height: 1000px;
+width: 100%;
+background-image: linear-gradient(0deg, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 104%),url(img/hero-bg1.png);
+padding-top: 10px;
+position: relative;
+}
+.navbar{
+  background:transparent;
+  transition: all 0.7s ease;
+}
+.navbar-brand{
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+color: #ffffff;
+font-weight: bold;
+background:transparent
+}
+.navbar-brand:hover{
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+color: #ffffff;
+font-weight: bold;
+}
+.navbar-nav .nav-link{
+font-family: 'Montserrat', sans-serif;
+color: #ffffff;
+font-size: 14px;
+margin-left: 35px;
+position: relative;
+}
+.navbar-nav .nav-link:hover{
+color: #fce38a;
+font-size: 14px;
+}
+.navbar-nav .nav-link::before{
+content: "";
+position: absolute;
+bottom: -10px;
+left: -2px;
+height: 3px;
+width: 100%;
+background-color: #fce38a;
+transition: all 0.5s;
+transform: scaleX(0);
+transform-origin: left;
+}
+.navbar-nav .nav-link:hover::before{
+transform-origin: right;
+transform: scaleX(1);
+}
+.nav-link.active{
+color: #fce38a;
+font-size: 14px;
+}
+.nav-link.active::after{
+content: "";
+position: absolute;
+bottom: -10px;
+left: -2px;
+height: 3px;
+width: 100%;
+background-color: #fce38a;
+transition: 0.36s;
+
+}
+.fa-bars{
+color: #fce38a;
+}
+.hero{
+width: 100%;
+height: 100%;
+
+}
+.hero-content{
+display: flex;
+justify-content: center;
+text-align: center;
+margin-top: 75px;
+}
+.content-title h3{
+font-family: 'Kaushan Script', cursive;
+font-size: 72px;
+color: #ffffff;
+}
+.content-title h1{
+font-family: 'Montserrat', sans-serif;
+font-size: 150px;
+font-weight: bold;
+color: #ffffff;
+}
+.content-title .btn{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+display: inline-block;
+border:2px solid #ffffff;
+color: #ffffff;
+border-radius: none !important;
+padding: 8px 30px;
+margin-top: 85px;
+}
+.content-title .btn:hover{
+background-color: #ffffff ;
+color: #fce38a;
+}
+.content-title::after{
+content: "";
+width: 60px;
+height: 3px;
+background-color: #ffffff;
+display: block;
+position: absolute;
+left: 48%;
+bottom: 36%
+
+}
+.header-footer{
+width: 100%;
+position: absolute;
+bottom: 0px;
+color: #ffffff;
+padding-bottom: 10px;
+}
+.progress{
+height: 3px;
+}
+.header-footer .progress-bar{
+background-color: #f38181;
+}
+.header-footer h4{
+font-family: 'Montserrat', sans-serif;
+margin-top: 15px;
+}
+/* --------------------------
+---------Start About---------
+-------------------------- */
+.about{
+padding-top: 110px;
+}
+.about .card{
+border: none;
+}
+.about .card .bg-color{
+background-color: #95e1d3;
+}
+.about .card .img-overlay{
+width: 100%;
+height: 100%;
+position: absolute;
+top: -10px;
+left: -10px;
+background: linear-gradient(0deg, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%) ;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 100;
+text-align: center;
+color: #ffffff;
+transition: all 0.36s ease;
+opacity: 0;
+}
+.img-overlay .overlay-content i{
+font-size: 35px;
+}
+.img-overlay .overlay-content h5{
+font-family: 'Montserrat', sans-serif;
+margin-top: 15px;
+font-size: 14px;
+}
+.about .card:hover .card-img-top{
+transform: translate(-10px,-10px);
+transition: all 0.36s;
+cursor: pointer;
+}
+.about .card:hover .img-overlay{
+opacity: 1;
+cursor: pointer;
+}
+/* --------------------------
+---------Start Conter---------
+-------------------------- */
+.counter{
+background-color: #95e1d3;
+margin-top: 70px;
+
+}
+.counter h1{
+font-family: 'Montserrat', sans-serif;
+font-size: 4.5rem;
+font-weight: bold;
+color: #ffffff;
+}
+.counter h5{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #ffffff;
+}
+.counter .row .col {
+border-right: 1px solid #ffffff;
+padding: 75px 0px;
+}
+.counter .row .col:last-child{
+border-right: none;
+}
+/* --------------------------
+---------Start Service---------
+-------------------------- */
+.services{
+padding-top: 110px;
+}
+.services .media img{
+margin-top: 10px;
+}
+.services .media .media-body{
+margin-left: 25px;
+}
+.services .media .media-body h5{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #000000;
+font-weight: 600;
+}
+.services .media .media-body p{
+font-family: 'Roboto', sans-serif;
+color: #999999;
+font-size: 15px;
+}
+/* --------------------------
+---------Start Image Slide---------
+-------------------------- */
+.image-slide{
+height: 835px;
+background-image: linear-gradient(0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255,.8) 100%),url(img/img-slide.png);
+padding-top: 100px;
+margin-top: 100px;
+}
+.slide-img{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+.tablet{
+position: absolute;
+top: 100%;
+left: 30%;
+}
+.mobile{
+position: absolute;
+top: 200px;
+left: 57%;
+}
+/* --------------------------
+-----Start Product section---
+-------------------------- */
+.products{
+margin-top: 110px;
+}
+.products .service-img{
+background-image: url(img/service-bg.png);
+background-repeat: no-repeat;
+height: 580px;
+}
+.accordion .card{
+margin-bottom: 10px;
+}
+.accordion .card h6{
+font-family: 'Montserrat', sans-serif;
+font-size: 1rem;
+margin-left: 15px;
+color: #000000;
+display: inline;
+
+}
+.accordion .card .card-header{
+height: 60px;
+}
+.accordion .card .btn{
+padding: 0px;
+}
+.accordion .card .btn-link:hover{
+text-decoration: none;
+}
+.accordion .card .card-body{
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+color: #999999;
+height: 180px;
+border-bottom: 1px solid rgba(0,0,0,.125);
+overflow: auto;
+}
+.accordion .card .card-body::-webkit-scrollbar{
+width: 5px;
+}
+.accordion .card .card-body::-webkit-scrollbar-track{
+background: #f8f8f8;
+border-radius: 2px;
+}
+.accordion .card .card-body::-webkit-scrollbar-thumb{
+border-radius: 2px;
+background: #95e1d3;
+}
+/* --------------------------
+---------Start review-slide---------
+-------------------------- */
+.review-slide{
+background-color: #f8f8f8;
+padding: 70px 0px;
+}
+.review-slide .media{
+margin-left: 70px;
+margin-right: 70px;
+}
+.review-slide img{
+border: 2px solid #95e1d3;
+padding: 40px;
+}
+.review-slide .media .media-body{
+margin-left: 50px;
+}
+.review-slide .media .media-body h5{
+font-family: 'Roboto', sans-serif;
+color: #999999;
+font-size: 24px;
+font-weight: lighter;
+font-style: italic;
+}
+.review-slide .media .media-body h4{
+font-family: 'Kaushan Script', cursive;
+margin-left: 70px;
+}
+.review-slide .media .media-body .cus-name{
+position: relative;
+margin-top: 25px;
+}
+.review-slide .media .media-body .cus-name:before{
+content: "";
+width: 60px;
+height: 3px;
+background-color: #f38181;
+display: block;
+position: absolute;
+left: 0;
+top:48%;
+
+}
+.carousel-control-next{
+justify-content: flex-end;
+}
+.carousel-control-prev{
+justify-content: flex-start;
+}
+.fa-angle-right,.fa-angle-left{
+font-size: 40px;
+color: #999999;
+}
+/* --------------------------
+---------Start Team---------
+-------------------------- */
+.team{
+margin-top: 100px;
+}
+.team .card{
+border:none;
+}
+.team .card .bg-color{
+position: relative;
+background-color: #95e1d3;
+}
+.team .card .img-overlay{
+width: 100%;
+height: 100%;
+position: absolute;
+top: -10px;
+left: -10px;
+background: linear-gradient(0deg, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%) ;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 100;
+text-align: center;
+color: #ffffff;
+transition: all 0.6s ease-in-out;
+opacity: 0;
+}
+.team .card .img-overlay .overlay-content a{
+padding: 20px;
+margin: 0px;
+background: #fce38a;
+color: #f38181;
+border-right: 1px solid #f38181;
+float: left;
+}
+.team .card .img-overlay .overlay-content a:last-child{
+border-right: none;
+}
+.team .card .img-overlay .overlay-content a:hover{
+background: #f38181;
+color: #fce38a;
+}
+.team .card .bg-color:hover .card-img-top{
+transform: translate(-10px,-10px);
+transition: all 0.6s ease-in-out;
+cursor: pointer;
+}
+.team .card .bg-color:hover .img-overlay{
+opacity: 1;
+cursor: pointer;
+}
+.team .card-title{
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+}
+.team .card-text{
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+color: #999999;
+font-weight: lighter;
+font-style: italic;
+}
+/* --------------------------
+---------Start Brands---------
+-------------------------- */
+.feature-brand{
+background-color: #f8f8f8;
+padding: 50px 0px;
+margin-top: 100px;
+}
+/* --------------------------
+---------Start Portfolio---------
+-------------------------- */
+.portfolio{
+padding-top: 110px;
+}
+.portfolio .col-lg-3{
+padding: 0px
+}
+.portfolio-img{
+position: relative;
+}
+.port-img-overlay{
+width: 100%;
+height: 100%;
+position: absolute;
+top:0;
+background: linear-gradient(0deg, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%) ;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 100;
+text-align: center;
+color: #ffffff;
+transition: all 0.36s;
+opacity: 0;
+}
+.port-img-overlay .overlay-content i{
+font-size: 35px;
+}
+.port-img-overlay .overlay-content h5{
+font-family: 'Montserrat', sans-serif;
+margin-top: 15px;
+font-size: 14px;
+}
+.port-img-overlay .overlay-content p{
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-weight: lighter;
+font-style: italic;
+}
+.portfolio-img:hover .port-img-overlay{
+opacity: 1;
+cursor: pointer;
+}
+/* --------------------------
+---------Start Brands---------
+-------------------------- */
+.customer-review-slide{
+padding: 110px 0px;
+}
+.customer-review-slide .media{
+margin-left: 70px;
+margin-right: 70px;
+}
+.customer-review-slide img{
+height: 220px;
+width: 220px;
+border-radius: 50%;
+
+}
+.customer-review-slide .media .media-body{
+margin-left: 50px;
+}
+.customer-review-slide .media .media-body h5{
+font-family: 'Roboto', sans-serif;
+color: #999999;
+font-size: 24px;
+font-weight: lighter;
+font-style: italic;
+}
+.customer-review-slide .media .media-body h4{
+font-family: 'Kaushan Script', cursive;
+margin-left: 70px;
+}
+.customer-review-slide .media .media-body .cus-name{
+position: relative;
+margin-top: 25px;
+}
+.customer-review-slide .media .media-body .cus-name:before{
+content: "";
+width: 60px;
+height: 3px;
+background-color: #f38181;
+display: block;
+position: absolute;
+left: 0;
+top:48%;
+
+}
+.carousel-control-next{
+justify-content: flex-end;
+}
+.carousel-control-prev{
+justify-content: flex-start;
+}
+.fa-angle-right,.fa-angle-left{
+font-size: 40px;
+color: #999999;
+}
+/* --------------------------
+---------Start Testamonial---------
+-------------------------- */
+.testamoinal{
+background-image: linear-gradient(0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255,.8) 100%),url(img/testmonial-bg.png);
+padding: 110px 0px;
+}
+.testamoinal .media img{
+border-radius: 50%;
+}
+.testamoinal .media .media-body{
+margin-left: 30px;
+margin-top: 20px;
+}
+.testamoinal .media .media-body h5{
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+}
+.testamoinal .media .media-body h6{
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+color: #999999;
+font-weight: lighter;
+font-style: italic;
+position: relative;
+}
+.testamoinal .media .media-body h6::after{
+content: "";
+width: 60px;
+height: 3px;
+background-color: #f38181;
+display: block;
+position: absolute;
+top:30px;
+}
+.testamoinal .media .media-body p{
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+color: #999999;
+margin-top: 30px;
+}
+/* --------------------------
+---------Start Blog---------
+-------------------------- */
+.blog{
+padding-top: 110px ;
+padding-bottom: 90px ;
+}
+.blog .card{
+border: none;
+}
+.blog .card .card-body{
+padding: 20px 0px;
+}
+.blog .card .card-body .card-title{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: 600;
+
+}
+.blog .card .card-body .card-text{
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+color: #999999;
+}
+.blog .card .card-footer{
+color: #999999;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+background-color: #ffffff;
+padding: 12px 0px;
+}
+.blog .card .card-footer span{
+margin-right: 10px;
+}
+.blog .card .card-footer .fa-eye,
+.blog .card .card-footer .fa-comment-dots{
+color: #95e1d3;
+margin-right: 5px;
+}
+.blog .card .blog-date{
+width: 60px;
+height: 70px;
+background-color:#95e1d3 ;
+padding: 5px;
+text-align: center;
+position: absolute;
+top: 35%;
+left: -10px;
+}
+.blog .card .blog-date h3{
+font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+color: #ffffff;
+}
+/* --------------------------
+---------Start MAp---------
+-------------------------- */
+.map{
+background-image: linear-gradient(0deg, rgba(255,255,255,.8) 0%, rgba(255,255,255,.8) 100%),url(img/map-bg.png);
+padding-top: 55px;
+}
+.map .section-title{
+color: #f38181;
+}
+.map .section-title a{
+color: #f38181;
+text-decoration: none;
+}
+.map .section-title::after{
+content: "";
+width: 60px;
+height: 3px;
+background-color: #f38181;
+display: block;
+position: absolute;
+left: 48.5%;
+margin-top: 25px;
+}
+/* --------------------------
+---------Start Footer---------
+-------------------------- */
+footer{
+padding:75px 0px 0px;
+background-color: #f8f8f8 ;
+}
+footer h4{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+padding-bottom: 30px;
+}
+footer .brand h1{
+font-family: 'Montserrat', sans-serif;
+font-size: 48px;
+color: #999999;
+font-weight: bold;
+}
+footer p{
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+color: #999999;
+line-height: 25px;
+}
+footer .follower h4{
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 22px;
+padding-bottom: 0px;
+}
+footer .follower p{
+font-family: 'Roboto', sans-serif;
+font-weight: lighter;
+font-style: italic;
+display: inline;
+}
+footer .follower i{
+color: #95e1d3;
+margin: 0px 5px;
+font-size: 18px;
+}
+.input-group{
+margin-top: 35px;
+}
+.input-group .btn{
+background-color: #95e1d3;
+border: 1px solid #95e1d3;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+font-family: 'Montserrat', sans-serif;
+padding: 6px 20px;
+color: #ffffff;
+
+}
+.input-group .form-control{
+border-right: none;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+.input-group .form-control::placeholder{
+color: #999999;
+}
+footer .media .media-body{
+font-family: 'Roboto', sans-serif;
+font-weight: lighter;
+font-style: italic;
+font-size: 13px;
+color: #999999;
+margin: 20px;
+}
+footer .media .media-body h5{
+font-family: 'Montserrat', sans-serif;
+color: #000000;
+font-size: 12px;
+font-style: normal;
+line-height: 17px;
+font-weight: 600;
+}
+footer .col-md-6 .col-4{
+padding: 3px !important;
+}
+footer .col-md-6 .col-4 img{
+width: 100%;
+}
+/* ***************
+------scrool top------
+***************  */
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 15px; 
+    right: 30px; 
+    z-index: 9999; 
+    border: none; 
+    outline: none; 
+    background-color: rgba(243,129,129,.7);
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px; 
+    font-size: 30px; 
+    transition: all .6sec ease;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
+/*********************
+------Large Devices----
+********************/
+@media (min-width:992px) and (max-width: 1199.8px) {
+.image-slide .tablet{
+left: 25%;
+}
+.blog .card .blog-date{
+top:28%;
+}
+
+}
+/*********************
+------Med Devices----
+********************/
+@media (min-width:768px) and (max-width: 991.8px) {
+.navbar-nav .nav-link{
+padding: 0px !important;
+margin-left: 30px;
+}
+
+.hero-content .content-title h3{
+font-size: 55px;
+}
+.hero-content .content-title h1{
+font-size: 110px;
+}
+.content-title::after{
+left: 46%;
+bottom: 48%
+}
+.discription{
+padding:0 20px 60px ;
+text-align: center;
+}
+.team .card .img-overlay .overlay-content a{
+padding: 10px;
+}
+.team .card .img-overlay .overlay-content i{
+font-size: 22px;
+}
+.services .media .media-body p{
+font-size: 14px;
+}
+.image-slide .tablet{
+left: 20%;
+}
+.products .service-img{
+height: 475px;
+}
+.review-slide .media .media-body h5{
+font-size: 18px;
+line-height: 27px;
+}
+.portfolio .col-md-6{
+padding: 0px
+}
+.portfolio .row{
+margin-left: 0px !important;
+margin-right: 0px !important;
+}
+.customer-review-slide .media .media-body h5{
+font-size: 18px;
+line-height: 27px;
+}
+.counter .row .col{
+padding: 45px 0px;
+}
+.blog .card .blog-date{
+top:16%;
+}
+footer .input-group{
+padding-bottom: 40px;
+}
+
+}
+/*********************
+------Small Devices--------
+********************/
+@media (min-width: 576px) and (max-width: 767.8px){
+.navbar-nav .nav-link{
+text-align: center;
+}
+.navbar-nav .nav-link::before{
+bottom: 0px;
+left: 36%;
+width: 30%;
+}
+
+
+.nav-link.active::after{
+
+bottom: 0px;
+left: 36%;
+width: 30%;
+}
+.hero-content .content-title h3{
+font-size: 45px;
+}
+.hero-content .content-title h1{
+font-size: 90px;
+}
+.content-title::after{
+left: 46%;
+bottom: 52%
+}
+.image-slide .tablet{
+left: 9%;
+}
+.counter .row .col{
+padding: 45px 0px;
+}
+.blog .card .blog-date{
+top:16%;
+}
+footer .input-group{
+padding-bottom: 40px;
+}
+.counter{
+margin-top: 25px;
+
+}
+.counter h1{
+font-size: 3.5rem;
+}
+.counter h5{
+font-size: 12px;
+}
+.counter .row .col {
+padding: 30px 0px;
+}
+.services{
+margin-top: 60px;
+}
+.services .media{
+padding: 20px;
+background: #f8f8f8;
+margin-bottom: 10px;
+}
+.services .media .media-body{
+margin-left: 25px;
+}
+.services .media .media-body h5{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #000000;
+font-weight: 600;
+}
+.services .media .media-body p{
+font-family: 'Roboto', sans-serif;
+color: #999999;
+font-size: 15px;
+}
+.review-slide .media{
+margin: 0px 15px;
+}
+.review-slide .media .media-body{
+margin-left: 20px;
+}
+.review-slide .media .media-body h5{
+font-size: 15px;
+line-height: 27px;
+}
+.review-slide img{
+padding: 0px;
+border: none;
+}
+.customer-review-slide .media{
+margin: 0px 15px;
+}
+.customer-review-slide .media .media-body{
+margin-left: 20px;
+}
+.customer-review-slide .media .media-body h5{
+font-size: 15px;
+line-height: 27px;
+}
+.customer-review-slide img{
+height: 120px;
+width: 120px;
+}
+.products .service-img{
+height: 410px;
+}
+.image-slide .tablet{
+left: 2%;
+}
+.image-slide .mobile{
+left: 60%;
+}
+
+.discription{
+padding: 0px 0px 30px;
+}
+.feature-brand img{
+width: 90%;
+}
+.portfolio-img img{
+width: 100%;
+}
+.portfolio .row .col-md-3{
+padding: 0px;
+}
+.testamoinal .media{
+margin-top: 20px;
+}
+.blog .card{
+padding-bottom: 30px;
+}
+footer .instagram{
+margin-top: 40px;
+}
+
+
+}
+/*********************
+------X-Small Devices----
+********************/
+@media (max-width: 575.98px) {
+.navbar-nav .nav-link{
+text-align: center;
+}
+.navbar-nav .nav-link::before{
+bottom: 0px;
+left: 36%;
+width: 30%;
+}
+
+
+.nav-link.active::after{
+
+bottom: 0px;
+left: 36%;
+width: 30%;
+}
+.hero-content .content-title h3{
+font-size: 40px;
+}
+.hero-content .content-title h1{
+font-size: 62px;
+}
+.content-title::after{
+left: 41%;
+bottom: 59%
+}
+.image-slide{
+height: 670px;
+}
+.image-slide .tablet{
+top: 106%;
+left: 15%;
+width: 60%;
+}
+.image-slide .mobile{
+top: 34px;
+left: 55%;
+width: 37%;
+}
+.counter .row .col{
+padding: 45px 0px;
+}
+.blog .card .blog-date{
+top:16%;
+}
+footer .input-group{
+padding-bottom: 40px;
+}
+.counter{
+margin-top: 25px;
+
+}
+.counter h1{
+font-size: 3.5rem;
+}
+.counter h5{
+font-size: 12px;
+}
+.counter .row .col {
+padding: 30px 0px;
+}
+.services{
+margin-top: 60px;
+}
+.services .media{
+padding: 20px;
+background: #f8f8f8;
+margin-bottom: 10px;
+}
+.services .media .media-body{
+margin-left: 25px;
+}
+.services .media .media-body h5{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+color: #000000;
+font-weight: 600;
+}
+.services .media .media-body p{
+font-family: 'Roboto', sans-serif;
+color: #999999;
+font-size: 15px;
+}
+.review-slide .media{
+margin: 0px 15px;
+}
+.review-slide .media .media-body{
+margin-left: 20px;
+}
+.review-slide .media .media-body h5{
+font-size: 15px;
+line-height: 27px;
+}
+.review-slide img{
+padding: 0px;
+border: none;
+}
+.customer-review-slide .media{
+margin: 0px 15px;
+}
+.customer-review-slide .media .media-body{
+margin-left: 20px;
+}
+.customer-review-slide .media .media-body h5{
+font-size: 15px;
+line-height: 27px;
+}
+.customer-review-slide img{
+height: 120px;
+width: 120px;
+}
+.products .service-img{
+height: 410px;
+}
+.image-slide .tablet{
+left: 15%;
+}
+.image-slide .mobile{
+left: 60%;
+}
+.discription{
+padding: 0px 0px 30px;
+}
+.feature-brand img{
+width: 90%;
+}
+.portfolio-img img{
+width: 100%;
+}
+.portfolio .row .col-md-3{
+padding: 0px;
+}
+.testamoinal .media{
+margin-top: 20px;
+}
+.blog .card{
+padding-bottom: 30px;
+}
+footer .instagram{
+margin-top: 40px;
+}
+}
+@media (min-width: 1600px){
+    .slide-img .tablet{
+        left: 37%
+    }
+}
