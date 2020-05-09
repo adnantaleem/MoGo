@@ -156,7 +156,6 @@ left: 48%;
 bottom: 43%
 }
 .header-footer{
-width: 100%;
 position: absolute;
 bottom: 0px;
 color: #ffffff;
@@ -808,6 +807,9 @@ font-size: 110px;
 left: 46%;
 bottom: 48%
 }
+.progress{
+    width: 80%;
+}
 .discription{
 padding:0 20px 60px ;
 text-align: center;
@@ -853,6 +855,12 @@ padding-bottom: 40px;
 ------Small Devices--------
 ********************/
 @media (min-width: 576px) and (max-width: 767.8px){
+body{
+overflow-x: hidden;
+}
+header{
+height: 850px;
+}
 .navbar-expand-md .navbar-nav{
 background-color: rgba(243,129,129,.8);
 }
@@ -879,8 +887,17 @@ font-size: 90px;
 left: 46%;
 bottom: 52%
 }
+.progress{
+    width: 85%;
+}
 .counter .row .col{
 padding: 45px 0px;
+}
+.image-slide{
+    background-size: 75%, auto,auto;
+}
+.mobile{
+    left: 59%;
 }
 .blog .card .blog-date{
 top:16%;
@@ -979,7 +996,10 @@ margin-top: 40px;
 ------X-Small Devices----
 ********************/
 @media (max-width: 575.98px) {
-.navbar-expand-md .navbar-nav{
+header{
+    height: 700px;
+}
+    .navbar-expand-md .navbar-nav{
 background-color: rgba(243,129,129,.8);
 }
 .navbar-nav .nav-link{
@@ -1003,16 +1023,17 @@ font-size: 62px;
 }
 .content-title::after{
 left: 41%;
-bottom: 59%
+bottom: 53%
 }
 .progress{
 width: 90%;
 }
 .image-slide{
 background-size: 70%, auto, auto;
+height: 650px;
 }
 .image-slide .mobile{
-bottom: 14%;
+bottom: 23%;
 }
 .image-slide .mobile img{
 width: 90%;
@@ -1108,6 +1129,9 @@ margin-top: 20px;
 }
 .blog .card{
 padding-bottom: 30px;
+}
+.map .section-title::after{
+left:42%;
 }
 footer .instagram{
 margin-top: 40px;
